@@ -1,12 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Terms of Service — Futuremutureru</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms of Service — Futuremutureru / Content Factory</title>
+  <style>
+    body{font-family:Inter,Arial,sans-serif;background:#0b0b0b;color:#eaeaea;line-height:1.6;margin:0}
+    .wrap{max-width:900px;margin:48px auto;padding:0 20px}
+    a{color:#ff0050;text-decoration:none} a:hover{text-decoration:underline}
+    h1{color:#ff0050;margin:0 0 8px} h2{margin-top:28px;color:#fff}
+    .card{background:#111;border:1px solid #222;border-radius:12px;padding:24px}
+    footer{margin:28px 0;color:#888;font-size:13px}
+    .nav{margin:18px 0 0;font-size:14px}
+  </style>
 </head>
 <body>
-  <h1>Terms of Service</h1>
-  <p>By using Futuremutureru, you agree to our terms of content automation and social network integration.</p>
-  <p>This site is provided for business content scheduling and publication management.</p>
+  <div class="wrap">
+    <h1>Terms of Service</h1>
+    <div class="card">
+      <p>Welcome to <strong>Futuremutureru / Content Factory</strong>. These Terms govern
+      your use of the demo integration and related services.</p>
+
+      <h2>1. Purpose</h2>
+      <p>This project demonstrates social-platform integrations (e.g., TikTok) for
+      publishing and account linking. It is provided “as is” for testing and review.</p>
+
+      <h2>2. Acceptable use</h2>
+      <ul>
+        <li>Do not upload illegal or infringing content.</li>
+        <li>Do not attempt to bypass platform security or rate limits.</li>
+        <li>Use only with accounts you own or are authorized to manage.</li>
+      </ul>
+
+      <h2>3. Accounts & permissions</h2>
+      <p>By authorizing via OAuth, you grant the app limited, revocable permissions
+      to act on your behalf as defined by the platform (e.g., create drafts or publish).
+      You can revoke access at any time in platform settings.</p>
+
+      <h2>4. Content & ownership</h2>
+      <p>You retain all rights to your content. You grant us only the technical right
+      to process and transmit content to the selected platform as part of the requested action.</p>
+
+      <h2>5. Disclaimer</h2>
+      <p>The service is provided without warranties. We are not liable for outages,
+      API changes, or moderation decisions by third-party platforms.</p>
+
+      <h2>6. Changes</h2>
+      <p>We may update these Terms. Continued use constitutes acceptance of the updated Terms.</p>
+
+      <h2>7. Contact</h2>
+      <p><a href="mailto:support@futuremutureru.example">support@futuremutureru.example</a></p>
+    </div>
+
+    <div class="nav">
+      <a href="./privacy.html">Privacy Policy</a> ·
+      <a href="./">Back to Demo</a>
+    </div>
+    <footer>© <span id="y"></span> Futuremutureru / Content Factory</footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
