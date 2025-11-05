@@ -2,11 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Futuremutureru — Content Automation Tool</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futuremutureru – TikTok Login Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0d1117;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    h1 {
+      color: #ff0050;
+    }
+    button {
+      background-color: #ff0050;
+      border: none;
+      color: white;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    .connected {
+      margin-top: 30px;
+      color: #0f0;
+      font-weight: bold;
+      display: none;
+    }
+  </style>
 </head>
 <body>
   <h1>Futuremutureru</h1>
-  <p>AI-based content management and publishing platform.</p>
-  <p>Used for TikTok, Instagram, and Facebook video automation.</p>
+  <p>Demo: TikTok Login Integration</p>
+  <button id="loginBtn">Login with TikTok</button>
+  <div class="connected" id="connectedMsg">✅ Connected to TikTok account</div>
+
+  <script>
+    const btn = document.getElementById('loginBtn');
+    const msg = document.getElementById('connectedMsg');
+    btn.addEventListener('click', () => {
+      btn.style.display = 'none';
+      msg.style.display = 'block';
+    });
+  </script>
 </body>
 </html>
