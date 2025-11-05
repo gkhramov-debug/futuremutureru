@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Privacy Policy — Futuremutureru</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — Futuremutureru / Content Factory</title>
+  <style>
+    body{font-family:Inter,Arial,sans-serif;background:#0b0b0b;color:#eaeaea;line-height:1.6;margin:0}
+    .wrap{max-width:900px;margin:48px auto;padding:0 20px}
+    a{color:#ff0050;text-decoration:none} a:hover{text-decoration:underline}
+    h1{color:#ff0050;margin:0 0 8px} h2{margin-top:28px;color:#fff}
+    .card{background:#111;border:1px solid #222;border-radius:12px;padding:24px}
+    footer{margin:28px 0;color:#888;font-size:13px}
+    .nav{margin:18px 0 0;font-size:14px}
+  </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p>We do not store or share any personal data. Access tokens are used only for content publishing automation.</p>
-  <p>All authentication is handled directly by TikTok, Meta, and other platforms via secure OAuth.</p>
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <div class="card">
+      <p><strong>Futuremutureru / Content Factory</strong> is a demo integration used to
+      showcase multi-platform publishing (TikTok, Instagram, Facebook, etc.). We
+      keep data collection to the minimum necessary to demonstrate OAuth login and
+      content publishing flows.</p>
+
+      <h2>What we collect</h2>
+      <ul>
+        <li>OAuth profile identifiers and access tokens returned by platforms (e.g., TikTok) strictly to perform the requested actions (login, draft creation, or publishing during tests).</li>
+        <li>Basic technical logs (timestamps, request/response status codes) for debugging and security.</li>
+      </ul>
+
+      <h2>How we use data</h2>
+      <ul>
+        <li>Authenticate the user, verify connection to the selected platform, and call the respective API on the user’s behalf.</li>
+        <li>Improve stability, investigate errors and abuse.</li>
+      </ul>
+
+      <h2>Data sharing & retention</h2>
+      <ul>
+        <li>We never sell personal data.</li>
+        <li>Access tokens are stored securely and rotated/invalidated on request.</li>
+        <li>Demo/test data may be deleted at any time on request: <a href="mailto:support@futuremutureru.example">support@futuremutureru.example</a>.</li>
+      </ul>
+
+      <h2>Your rights</h2>
+      <p>You may request deletion of your data and revocation of granted permissions
+      at any time. You can also revoke access via the platform’s settings (e.g., TikTok settings &gt; Apps &amp; websites).</p>
+
+      <h2>Contact</h2>
+      <p>For privacy questions: <a href="mailto:support@futuremutureru.example">support@futuremutureru.example</a></p>
+    </div>
+
+    <div class="nav">
+      <a href="./terms.html">Terms of Service</a> ·
+      <a href="./">Back to Demo</a>
+    </div>
+    <footer>© <span id="y"></span> Futuremutureru / Content Factory</footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
